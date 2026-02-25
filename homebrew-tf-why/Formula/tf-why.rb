@@ -7,22 +7,22 @@ class TfWhy < Formula
   on_macos do
     on_arm do
       url "https://github.com/djeeteg007/tf-why/releases/download/v#{version}/tf-why_#{version}_darwin_arm64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_DARWIN_ARM64"
+      sha256 "bb100f1c8722d5487ab37ec1bd6a5b4c345111b5e05780c60f9a7f81a39cf140"
     end
     on_intel do
       url "https://github.com/djeeteg007/tf-why/releases/download/v#{version}/tf-why_#{version}_darwin_amd64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_DARWIN_AMD64"
+      sha256 "fe1a0d53507811b8c86f9fa8371571db476e3f7a666ef3a1fc1b47f36fdc33ec"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/djeeteg007/tf-why/releases/download/v#{version}/tf-why_#{version}_linux_arm64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_ARM64"
+      sha256 "702478d29c4d6f04f595bad36ab818c3e8c516ac3e0200342753000230913bde"
     end
     on_intel do
       url "https://github.com/djeeteg007/tf-why/releases/download/v#{version}/tf-why_#{version}_linux_amd64.tar.gz"
-      sha256 "PLACEHOLDER_SHA256_LINUX_AMD64"
+      sha256 "d10ef963ad4c54bd4a890371108084ece694b765fedf6f200c2caa5fd00e7961"
     end
   end
 
