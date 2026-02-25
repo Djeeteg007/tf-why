@@ -1,0 +1,31 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket_public_access_block.example",
+      "type": "aws_s3_bucket_public_access_block",
+      "name": "example",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["update"],
+        "before": {
+          "bucket": "my-bucket",
+          "block_public_acls": true,
+          "block_public_policy": true,
+          "ignore_public_acls": true,
+          "restrict_public_buckets": true
+        },
+        "after": {
+          "bucket": "my-bucket",
+          "block_public_acls": false,
+          "block_public_policy": false,
+          "ignore_public_acls": true,
+          "restrict_public_buckets": true
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

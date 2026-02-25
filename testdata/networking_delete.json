@@ -1,0 +1,22 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_nat_gateway.main",
+      "type": "aws_nat_gateway",
+      "name": "main",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["delete"],
+        "before": {
+          "allocation_id": "eipalloc-abc123",
+          "subnet_id": "subnet-xyz789"
+        },
+        "after": null,
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

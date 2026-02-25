@@ -1,0 +1,22 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_iam_role_policy.deployer",
+      "type": "aws_iam_role_policy",
+      "name": "deployer",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "name": "deployer-policy",
+          "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"iam:PassRole\",\"sts:AssumeRole\"],\"Resource\":\"*\"}]}"
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

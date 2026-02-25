@@ -1,0 +1,27 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_ecs_service.api",
+      "type": "aws_ecs_service",
+      "name": "api",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["update"],
+        "before": {
+          "name": "api-service",
+          "desired_count": 4,
+          "deployment_minimum_healthy_percent": 100
+        },
+        "after": {
+          "name": "api-service",
+          "desired_count": 1,
+          "deployment_minimum_healthy_percent": 50
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

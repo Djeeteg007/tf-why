@@ -1,0 +1,30 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_security_group.wide_open",
+      "type": "aws_security_group",
+      "name": "wide_open",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["create"],
+        "before": null,
+        "after": {
+          "name": "wide-open",
+          "ingress": [
+            {
+              "from_port": 0,
+              "to_port": 65535,
+              "protocol": "-1",
+              "cidr_blocks": ["0.0.0.0/0"],
+              "ipv6_cidr_blocks": []
+            }
+          ]
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": {}
+      }
+    }
+  ]
+}

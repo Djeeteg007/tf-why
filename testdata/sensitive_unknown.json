@@ -1,0 +1,31 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_instance.secret",
+      "type": "aws_instance",
+      "name": "secret",
+      "provider_name": "registry.terraform.io/hashicorp/aws",
+      "change": {
+        "actions": ["update"],
+        "before": {
+          "ami": "ami-old",
+          "user_data": "oldscript",
+          "instance_type": "t3.micro"
+        },
+        "after": {
+          "ami": "ami-new",
+          "user_data": "newscript",
+          "instance_type": "t3.micro"
+        },
+        "after_unknown": {
+          "id": true
+        },
+        "before_sensitive": {},
+        "after_sensitive": {
+          "user_data": true
+        }
+      }
+    }
+  ]
+}
